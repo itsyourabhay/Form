@@ -1,12 +1,13 @@
 .pimage {
   display: block;
+  margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
   width: 300px;
   border-radius: 20% 20% 20% 20%;
 }
 body {
-  color: aqua;
+  margin: 0%;
 }
 .logo {
   display: flex;
@@ -21,34 +22,21 @@ transition: 0.5s;
 .contain:hover {
   margin-top: 10px;
 }
-.illus {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-  
-}
-.illusimg {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 280px;
-}
-.illusimg:hover {
-width: 300px;
-transition: 0.5s;
-}
-.imgilus {
-  margin-top: 20px;
-  margin-bottom: 0px;
-}
+
+
 h4 {
 
   margin-top: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 50px;
+  font-size: 40px;
   font-family: 'Inter', sans-serif;
-  color: black;
+  color: rgb(45, 44, 44);
+}
+body {
+  background: rgb(137,171,242);
+background: radial-gradient(circle, rgba(137,171,242,1) 0%, rgba(228,233,148,1) 100%); */
+  width: 100vw;
+  height: 100vh;
 }
