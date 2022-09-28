@@ -4,7 +4,9 @@
   margin-left: auto;
   margin-right: auto;
   width: 250px;
-  border-radius: 40% 40% 40% 40%;
+  border-radius: 50%;
+  border: 10px;
+  border-color: green;
 }
 body {
   margin: 0%;
@@ -13,18 +15,20 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 10px;padding-right: 4px;
 }
 .pimage:hover {
+  width: 300px;
   border-radius: 50%;
 transition: 0.5s;
+
 }
 .contain:hover {
   margin-top: 10px;
 }
 
 
-h4 {
+.tagline {
 
   margin-top: 10px;
   display: flex;
@@ -35,17 +39,24 @@ h4 {
   color: rgb(45, 44, 44);
 }
 body {
-  background: rgb(137,171,242);
-background: radial-gradient(circle, rgba(137,171,242,1) 0%, rgba(228,233,148,1) 100%); */
+background: linear-gradient(90deg, rgba(252,255,99,1) 0%, rgb(202, 197, 93) 51%, rgba(255,236,126,1) 100%);
   width: 100vw;
   height: 100vh;
 }
 .logoimg {
   width: 50px;
 }
-
+.indiv{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  position: relative;
+  top: 40%;
+  font-family: 'Inter', sans-serif;
+  font-size: 30px;
+}
 @media screen and (max-width:400px) {
-  h4 {
+  .tagline {
     font-size: 30px;
   }
 }
@@ -57,5 +68,35 @@ background: radial-gradient(circle, rgba(137,171,242,1) 0%, rgba(228,233,148,1) 
 @media screen and (max-width:400px) {
   .logoimg{
     width: 40px;
+  }
+}
+.parents{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.github{
+width: 40px;
+margin-left: 4px;
+}
+
+.boxes {
+  background-color: rgb(209, 218, 225);
+  width: 250px;
+  height: 150px;
+  border-radius: 20px;
+  border: 5px solid rgb(142, 130, 130);
+}
+
+@media  screen and (max-width:500px) {
+  .boxes{
+    width: 150px;
+    height: 100px;
+  }
+  #one {
+    margin-bottom: 40px;
+  }
+  #two {
+    margin-bottom: 40px;
   }
 }
