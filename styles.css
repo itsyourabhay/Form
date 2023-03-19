@@ -19,14 +19,16 @@ body {
   height: 60px;
 }
 .pimage:hover {
+
   width: 300px;
   border-radius: 50%;
 transition: 0.5s;
-
 }
 .contain:hover {
   margin-top: 10px;
 }
+
+
 
 
 .tagline {
@@ -67,22 +69,11 @@ background: linear-gradient(90deg, rgba(252,255,99,1) 0%, rgb(202, 197, 93) 51%,
   font-family: 'Inter', sans-serif;
   font-size: 30px;
 }
-@media screen and (max-width:360px) {
-  .tagline {
-    font-size: 30px;
-  }
-}
-@media screen and (max-width:360px) {
-  .pimage {
-    width: 200px;
-  } 
-} 
-@media screen and (max-width:360px) {
-  .logoimg{
-    width: 40px;
-  }
-}
+
+
+
 .parents{
+ 
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -98,6 +89,7 @@ margin-left: 4px;
   height: 150px;
   border-radius: 20px;
   border: 2px solid rgb(101, 101, 101);
+  cursor: pointer;
 }
 .boxes:hover {
 opacity: 0.8;
@@ -105,24 +97,97 @@ background-color: rgb(208, 209, 210);
 transition: 0.2s;
 }
 
-@media screen and (max-width:360px) {
+@media screen and (max-width:500px) {
   .github {
     width: 35px;
   }
   .indiv {
     font-size: 20px;
   }
+  .boxes{
+    width: 60%;
+    height: 100px;
+    margin-bottom: 20px;
+  }
+
+  .tagline {
+    font-size: 30px;
+  }
+  .pimage {
+    width: 200px;
+  } 
+  .logoimg{
+    width: 40px;
+  }
 }
 
-@media  screen and (max-width:360px) {
+@media screen and (min-width:500px) and (max-width:800px) {
+  .github {
+    width: 35px;
+  }
+  .indiv {
+    font-size: 20px;
+  }
   .boxes{
-    width: 130px;
-    height: 90px;
+    width: 40%;
+    height: 120px;
+    margin-bottom: 20px;
   }
-  #one {
-    margin-bottom: 40px;
+
+  .tagline {
+    font-size: 30px;
   }
-  #two {
-    margin-bottom: 40px;
+  .pimage {
+    width: 200px;
+  } 
+  .logoimg{
+    width: 40px;
+  }
+}
+@media screen and (min-width:800px)  {
+  .github {
+    width: 35px;
+  }
+  .indiv {
+    font-size: 20px;
+  }
+  .boxes{
+    width: 40%;
+    height: 150px;
+    margin-bottom: 20px;
+  }
+
+  .tagline {
+    font-size: 30px;
+  }
+  .pimage {
+    width: 200px;
+  } 
+  .logoimg{
+    width: 40px;
+  }
+}
+
+@media screen and (min-width:1050px)  {
+  .github {
+    width: 35px;
+  }
+  .indiv {
+    font-size: 20px;
+  }
+  .boxes{
+    width: 20%;
+    height: 140px;
+    margin-bottom: 20px;
+  }
+
+  .tagline {
+    font-size: 30px;
+  }
+  .pimage {
+    width: 200px;
+  } 
+  .logoimg{
+    width: 40px;
   }
 }
