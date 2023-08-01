@@ -1,193 +1,106 @@
-.pimage {
-  display: block;
-  margin-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 250px;
-  border-radius: 50%;
-  border: 10px;
-  border-color: green;
+body{
+  background-color: #212024;
 }
-body {
-  margin: 0%;
+#header > div:nth-child(1) {
+  height: 100%;
 }
-.logo {
+#up {
+  height: 20px;
+}
+#header{
+  height: 50px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  margin-top: 10px;padding-right: 4px;
-  height: 60px;
+  width: 60%;
+  margin: auto;
+  mix-blend-mode:color-dodge;
+  /* border: 1px solid red; */
 }
-.pimage:hover {
-
-  width: 300px;
-  border-radius: 50%;
-transition: 0.5s;
-}
-.contain:hover {
-  margin-top: 10px;
-}
-
-
-
-
-.tagline {
-
-  margin-top: 10px;
-  display: flex;
-  justify-content: center;
+#header > div:nth-child(1) > img{
   align-items: center;
-  font-size: 40px;
-  font-family: 'Inter', sans-serif;
-  color: rgb(45, 44, 44);
+  height: 40%;
+ margin-left: 6px;
+ cursor: pointer;
 }
-body {
-background: linear-gradient(90deg, rgba(252,255,99,1) 0%, rgb(202, 197, 93) 51%, rgba(255,236,126,1) 100%);
-  width: 100vw;
-  height: 100vh;
-}
-.logoimg {
-  width: 50px;
-
-}
-
-.logoimg:hover {
-  width: 60px;
-  transition: 0.2s;
-  cursor: pointer;
-}
-.github:hover {
-  width: 50px;
+#header > div:nth-child(1) > img:hover{
+  padding-bottom: 2px;
+  border-bottom: 1px solid grey;
   transition: 0.2s;
 }
-.indiv{
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  position: relative;
-  top: 40%;
-  font-family: 'Inter', sans-serif;
-  font-size: 30px;
+body > div:nth-child(1) {
+  margin-top: 20px;
 }
+#header > div{
+  display: flex;
 
-
-
-.parents{
- 
+  align-items: center;
+}
+#header > div:nth-child(2){
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
-}
-.github{
-width: 42px;
-margin-left: 4px;
-}
+  width: 40%;
+height: 100%;
 
-.boxes {
-  background-color: rgb(255, 255, 255);
-  width: 250px;
-  height: 150px;
-  border-radius: 20px;
-  border: 2px solid rgb(101, 101, 101);
-  cursor: pointer;
 }
-.boxes:hover {
-opacity: 0.8;
-background-color: rgb(208, 209, 210);
-transition: 0.2s;
+#header > div:nth-child(2) > div h3 {
+  color: rgb(255, 255, 255);
+font-weight: 100;
+font-family: 'Ysabeau SC', sans-serif;
+/* font-size: 16px; */
+letter-spacing: 2.5px;
+cursor: pointer;
 }
+#header > div:nth-child(2) > div{
+ height: 80%;
+ display: flex;
+align-items: center;
+padding-left: 20px;
+padding-right: 20px;
+border-radius: 10px;
+   }
+#header > div:nth-child(2) > div:hover{
+  background-color: #413a3a;
+  font-size: 18px;
+  transition: 0.2s;
+  color: white;
+   }
+   #header > div:nth-child(3) {
 
-@media screen and (max-width:500px) {
-  .github {
-    width: 35px;
-  }
-  .indiv {
-    font-size: 20px;
-  }
-  .boxes{
-    width: 60%;
-    height: 100px;
-    margin-bottom: 20px;
-  }
+    height: 100%;
+   }
+   #header > div:nth-child(3) img {
+    cursor: pointer;
+    height: 85%;
+    border-radius: 10px;
+   }
+   #header > div:nth-child(3) img:hover{
+    height: 90%;
+    transition: 0.5s;
+   }
+  
 
-  .tagline {
-    font-size: 30px;
-  }
-  .pimage {
-    width: 200px;
-  } 
-  .logoimg{
-    width: 40px;
-  }
-}
+  /*image center*/
 
-@media screen and (min-width:500px) and (max-width:800px) {
-  .github {
-    width: 35px;
+  #imgPart{
+    margin-top: 50px;
   }
-  .indiv {
-    font-size: 20px;
+  #imgPart > div{
+    width: 30%;
+    margin: auto;
+   height: 400px;
+   display: flex;
+   justify-content: space-around;
   }
-  .boxes{
-    width: 40%;
-    height: 120px;
-    margin-bottom: 20px;
-  }
-
-  .tagline {
-    font-size: 30px;
-  }
-  .pimage {
-    width: 200px;
-  } 
-  .logoimg{
-    width: 40px;
-  }
-}
-@media screen and (min-width:800px)  {
-  .github {
-    width: 35px;
-  }
-  .indiv {
-    font-size: 20px;
-  }
-  .boxes{
-    width: 40%;
-    height: 150px;
-    margin-bottom: 20px;
-  }
-
-  .tagline {
-    font-size: 30px;
-  }
-  .pimage {
-    width: 200px;
-  } 
-  .logoimg{
-    width: 40px;
-  }
-}
-
-@media screen and (min-width:1050px)  {
-  .github {
-    width: 35px;
-  }
-  .indiv {
-    font-size: 20px;
-  }
-  .boxes{
-    width: 20%;
-    height: 140px;
-    margin-bottom: 20px;
-  }
-
-  .tagline {
-    font-size: 30px;
-  }
-  .pimage {
-    width: 200px;
-  } 
-  .logoimg{
-    width: 40px;
-  }
-}
+  
+  #imgPart > div > img{
+    height: 100%;
+    border-radius: 10px;
+    padding: 5px;
+    border: 0.5px solid grey;
+    cursor: pointer;
+   }
+   #imgPart > div > img:hover{
+    height: 420px;
+    transition: 0.5s;
+   }
