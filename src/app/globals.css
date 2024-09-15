@@ -2,7 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+@import url('https://fonts.googleapis.com/css2?family=Martel:wght@200;300;400;600;700;800;900&display=swap');
+
+
+/* :root {
   --background: #ffffff;
   --foreground: #171717;
 }
@@ -12,16 +15,21 @@
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  /* background-color: antiquewhite; */
+  /* color: var(--foreground); */
+  /* background: var(--background); */
+  /* font-family: Arial, Helvetica, sans-serif; */
+  height: 100vh;
+  width: 100vw;
+  background: rgb(107,106,109);
+  background: linear-gradient(0deg, rgb(36, 36, 36) 0%, rgba(0,0,0,1) 100%);
 }
 
-@layer utilities {
+/* @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
-}
+} */
